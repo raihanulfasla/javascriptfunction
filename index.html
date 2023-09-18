@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+
+
+
+    <style>
+        body {
+            background-color: yellow;
+            color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        button{
+            border: 1px dashed  black;
+            background-color: transparent;
+            color:black;
+            padding:10px;
+            transition: 0.2s;
+
+        }
+        button:hover{
+            background-color: black;
+            color:yellow;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+    </style>
+    <h1>DOM Manipulation</h1>
+
+
+    <div class="" style="max-width: 500px;">
+        
+        <div class="" style="text-align: center;">
+            <button id="button" >Change Paragraph content</button>
+        </div>
+        
+        <p id="paragraph" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nesciunt impedit ratione neque? Minus nesciunt
+            totam ipsum expedita ullam adipisci perferendis fugiat, excepturi dolores, facilis necessitatibus at libero,
+            temporibus et.</p>
+    </div>
+
+
+
+
+
+   <script>
+
+       
+        document.getElementById("button") 
+        
+        console.log(document.getElementById("button"))
+        
+    
+        const button = document.getElementById("button");
+        
+        document.getElementById("paragraph");
+        
+        console.log(document.getElementById("paragraph"))
+        
+         const paragraph = document.getElementById("paragraph");
+
+        
+        button.addEventListener("click",function (params) {
+            paragraph.innerHTML = 'You have clicked'
+        }) 
+        
+
+
+    </script> 
+
+</body>
+
+</html>
